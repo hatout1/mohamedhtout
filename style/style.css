@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+}
+nav{
+    height: 5vh;
+    background-color: chartreuse;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+a{
+    /* background-color: blue; */
+    border-radius: 15%;
+    font-size: 24px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+main{
+    min-height: 89vh;
+    background-color: rgba(255, 127, 80, 0.603);
+}
+.projects-container, 
+.about-container, 
+.hire-container,
+.contact-container,
+.others-container {
+height: 95vh;
+/* background-color: crimson; */
+}
+
+
+footer{
+    height: 6vh;
+    background-color: cornflowerblue;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+    font-size: 80px;
+    padding: 30px;
+    width: 80px;
+  }
