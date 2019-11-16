@@ -1,11 +1,14 @@
 $(document).ready(function () {
 
-
-
     $("a").click(function (event) {
         let nav = event.target.id;
         console.log(nav)
         switch (nav) {
+            case (nav = 'home'):
+                $('html, body').animate({
+                    scrollTop: $(".home").offset().top
+                }, 2000);
+                break;
             case (nav = 'about'):
                 $('html, body').animate({
                     scrollTop: $(".about").offset().top
@@ -34,23 +37,4 @@ $(document).ready(function () {
         }
     });
 
-    // console.log(nav)
-
-    // $(document).click(function () {
-
-    //     switch (nav) {
-    //         case (nav === 'hire'):
-    //             $('html, body').animate({
-    //                 scrollTop: $(".hire").offset().top
-    //             }, 2000);
-    //     }
-
-
-    // $("#hire").click(function () {
-    //     $('html, body').animate({
-    //         scrollTop: $(".hire").offset().top
-    //     }, 2000);
-    // });
-
 })
-// })
