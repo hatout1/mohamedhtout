@@ -140,9 +140,9 @@ font-style: oblique;
   /* Fading animation */
   .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.9s;
+    -webkit-animation-duration: 5.0s;
     animation-name: fade;
-    animation-duration: 1.9s;
+    animation-duration: 3.0s;
   }
   
   @-webkit-keyframes fade {
@@ -202,6 +202,26 @@ font-style: oblique;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.411), rgba(51, 49, 49, 0.425), rgb(118, 138, 197), rgb(39, 83, 218), rgb(4, 5, 8));
 
 }
+.firebase-show{
+display: block;
+min-height: 50px;
+width: 70%;
+margin-left: 15%;
+margin-right: 15%;
+float: left;
+border-block-end: yellow;
+border-style: double;
+}
+
+.firebase-show > h1{
+    font-size: 24px;
+    text-align: center;
+}
+
+.firebase-show > h2{
+    font-size: 16px;
+    text-align: center;
+}
 
 /* #imageProjects{
     border-radius: 100%;
@@ -232,4 +252,32 @@ footer{
     opacity: 0.7;
     font-size: 80px;
     width: 80px;
+}
+
+/* -------------Others' Form------------- */
+.others-form{
+
+    display: table;
+    min-height: 400px;
+    width: 80%;
+    border: 1px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 200px;
+    margin-right: 20%;
+    background-color: #ffffff;
+    padding-right: 20px;
+}
+@media screen and (max-width: 640px){
+    .others-form{
+    display: table;
+    min-height: 400px;
+    width: 80%;
+    border: 1px;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-right: 10%;
+    background-color: #ffffff;
+    padding-right: 20px;
+    }
 }
