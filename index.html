@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="./style/style.css">
     <title>M.Htout</title>
 
@@ -28,7 +28,7 @@
         <div class="home-container">
             <h2 class="home">Home</h2>
 
-            <h1 class="name">I'M <br>Mohamed Htout</h1>
+            <!-- <h1 class="name">I'M <br>Mohamed Htout</h1> -->
 
         </div>
 
@@ -92,16 +92,17 @@
 
         <div class="others-container">
             <h2 class="others">What Others Saying About Me</h2>
+            <othersDisplay></othersDisplay>
             <form id="others-form" action="">
-                <div class="single-form">
-                    <input type="text" name="name" placeholder="Name">
+                <div class="name-others-form">
+                    <input type="text" name="name" placeholder="Name" id="name-others-form">
                 </div>
-                <div class="single-form">
-                    <textarea name="message" placeholder="Message"></textarea>
+                <div class="message-others-form">
+                    <textarea name="message" placeholder="Message" id="message-others-form"></textarea>
                 </div>
                 <p class="form-message"></p>
                 <div class="single-form">
-                    <button class="main-btn" type="submit">submit</button>
+                    <button class="others-btn" type="submit">submit</button>
                 </div>
             </form>
 
@@ -121,16 +122,12 @@
     <!-- Firebase links -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
-
-
-    <!-- Fontawsome CDN for icones -->
-    <!-- <script src="https://use.fontawesome.com/9a5a5d9e5c.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
     <!-- jquery CDN -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- local javascript file -->
-    <script src="./assetes/app.js"></script>
+    <script src="./assets/app.js"></script>
 
 
 </body>
