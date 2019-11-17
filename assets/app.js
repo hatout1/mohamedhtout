@@ -46,7 +46,7 @@ $(document).ready(function () {
                 break;
             case (nav = 'others'):
                 $('html, body').animate({
-                    scrollTop: $(".others").offset().top
+                    scrollTop: $(".others-container").offset().top
                 }, 2000);
                 break;
         }
@@ -76,7 +76,54 @@ $(document).ready(function () {
         $('#name-others-form').empty();
         $('#messgae-others-form').empty();
 
-        $(".others-container > othersDisplay").append("<h1> (" + otherMessageDisp + ")</h1>" + "<h2>" + otherNameDisp + "</h2>")
+        $(".others-container > othersDisplay").append(`<div class="firebase-show"><h1>${otherMessageDisp}</h1><h2>"${otherNameDisp}"</h2></div>`)
     });
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    // ----------------- Projects Slide Show-----------------------------------------
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+
+
+
+
 
 })
