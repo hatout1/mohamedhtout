@@ -76,9 +76,7 @@ $(document).ready(function () {
         $('#name-others-form').empty();
         $('#messgae-others-form').empty();
 
-        $(".others-container > othersDisplay").append(`<div class="firebase-show"><h1>${otherMessageDisp}</h1><h2>"${otherNameDisp}"</h2></div>`)
-
-
+        $(".others-container > othersDisplay").append(`<div class="firebase-show"><h1>${otherMessageDisp}</h1><h2>"${otherNameDisp}"</h2></div>`);
     });
 
 

@@ -16,7 +16,6 @@
 <body>
 
     <nav>
-
         <a href="#" id="home">Home</a> <!-- picture with name -->
         <a href="#" id="about">About Me</a> <!-- genegal info / Marketing speech -->
         <a href="#" id="projects">My Projects</a> <!-- project that I have already done -->
@@ -29,17 +28,17 @@
 
         <div class="home-container">
             <h2 class="home">Home</h2>
-
-            <h1 class="name">I'M <br>Mohamed Htout</h1>
-            <img src="./images/me.png" alt="img" id="photo">
-
+            <div class="name col-xs-12 col-md-12 col-lg-6">
+                <h1 id="name">I'M <br>Mohamed Htout</h1>
+            </div>
+            <div class="photo col-xs-12 col-md-12 col-lg-6">
+                <img src="./images/me.png" alt="img" id="photo">
+            </div>
         </div>
 
         <div class="about-container">
             <h2 class="about">About Me</h2>
-
             <div class="textarea">
-
                 <p>My Name is Mohamed, some people like to call me Mo, I originally from morocco. I have been in The
                     United
                     States for 4 years. I like soccer, coding, and money. </p><br>
@@ -58,51 +57,41 @@
             </div>
         </div>
 
-        </!-->
-
-
         <div class="projects-container">
             <h2 class="projects">My Projects</h2>
             <div class="slideshow-container">
-
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 5</div>
                     <img src="./images/Crystals Collector.png"
                         style="margin-left:15%; margin-right:15%;width:70%; height:70vh; border-radius: 0.9%; padding:5%">
                     <div class="text">Crystals Collector</div>
                 </div>
-
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 5</div>
                     <img src="./images/Popcorn.png"
                         style="margin-left:15%; margin-right:15%;width:70%; height:70vh; border-radius: 0.9%; padding:5%">
                     <div class="text">popcorn</div>
                 </div>
-
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 5</div>
                     <img src="./images/The psychic game.png"
                         style="margin-left:15%; margin-right:15%;width:70%; height:70vh; border-radius: 0.9%; padding:5%">
                     <div class="text">The Psychic Game</div>
                 </div>
-
                 <div class="mySlides fade">
                     <div class="numbertext">4 / 5</div>
                     <img src="./images/train scheduler.png"
                         style="margin-left:15%; margin-right:15%;width:70%; height:70vh; border-radius: 0.9%; padding:5%">
                     <div class="text">Train Scheduler</div>
                 </div>
-
                 <div class="mySlides fade">
                     <div class="numbertext">5 / 5</div>
                     <img src="./images/Trivia Game.png"
                         style="margin-left:15%; margin-right:15%;width:70%; height:70vh; border-radius: 0.9%; padding:5%">
                     <div class="text">Trivia Game</div>
                 </div>
-
             </div>
             <br>
-
             <div style="text-align:center">
                 <span class="dot"></span>
                 <span class="dot"></span>
@@ -112,15 +101,22 @@
             </div>
         </div>
 
-
         <div class="hire-container">
             <h2 class="hire">Hire Me</h2>
-            <form method="get" action="./Mohamed Htout Resume.pdf">
-                <button type="submit">Pdf Download!</button>
-            </form>
-            <form method="get" action="./Mohamed Htout Resume.docx">
-                <button type="submit">Doc Download!</button>
-            </form>
+            <div class="hire-icons">
+                <div id="pdf">
+                    <img src="./images/pdf.png" class="pdf">
+                    <form method="get" action="./Mohamed Htout Resume.pdf">
+                        <button class="pdf-btn" type="submit">Pdf Download!</button>
+                    </form>
+                </div>
+                <div id="doc">
+                    <img src="./images/word.png" class="doc">
+                    <form method="get" action="./Mohamed Htout Resume.docx">
+                        <button class="doc-btn" type="submit">Doc Download!</button>
+                    </form>
+                </div>
+            </div>
             <div class="resume"></div>
         </div>
 
@@ -136,7 +132,6 @@
                             <input class="form-control" rows="" id="comment">
                         </div>
                     </div>
-
                 </div>
 
                 <div class="row">
@@ -146,7 +141,6 @@
                             <input class="form-control" rows="5" id="email"></input>
                         </div>
                     </div>
-
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-12 col-lg-12 float-right">
@@ -172,7 +166,6 @@
                             <input class="form-control" rows="" id="comment">
                         </div>
                     </div>
-
                 </div>
 
                 <div class="row">
@@ -187,8 +180,6 @@
             </div>
         </div>
 
-
-
     </main>
     <footer>
         <i class="fa fa-twitter"></i>
@@ -196,7 +187,6 @@
         <i class="fa fa-linkedin"></i>
         <i class="fa fa-google"></i>
     </footer>
-
 
     <!-- Firebase links -->
     <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
@@ -206,7 +196,6 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- local javascript file -->
     <script src="./assets/app.js"></script>
-
 
 </body>
 
