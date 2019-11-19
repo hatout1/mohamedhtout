@@ -52,7 +52,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.others-btn').on('click', function (e) {
+    $('#others-btn').on('click', function (e) {
         e.preventDefault();
 
         var otherName = $('#name-others-form').val();
