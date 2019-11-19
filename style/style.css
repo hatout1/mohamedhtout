@@ -11,7 +11,7 @@ nav{
     text-align: right;
 }
 
-a{
+.a{
     color: #fbff00;
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
@@ -19,17 +19,17 @@ a{
     vertical-align: middle;
     margin-top: 2.5vh;
 }
-a:hover{
+.a:hover{
     color: tomato;
     font-size: 32px;
 }
 
-a:last-child{
+.a:last-child{
     margin-right:50px;
     text-decoration: none;
 }
 
-a:not(:last-child) {
+.a:not(:last-child) {
     margin-right: 20px;
     border-right: #777777 solid;
     text-align: center;
@@ -115,11 +115,11 @@ min-height: 95vh;
 }
 
 .home-container{
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.411), rgba(51, 49, 49, 0.425), rgb(118, 138, 197), rgb(39, 83, 218), rgb(4, 5, 8));
+    background-color: rgba(135, 245, 221, 0.411);
 }
 
 .about-container{
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.411), rgba(51, 49, 49, 0.425), rgb(118, 138, 197), rgb(39, 83, 218), rgb(4, 5, 8));
+    background-color: rgba(135, 245, 221, 0.411);
 text-align: justify;
 font-size: 32px;
 font-style: oblique;
@@ -138,7 +138,7 @@ font-style: oblique;
 }
 
 .projects-container{
-     background: linear-gradient(90deg, rgba(255, 255, 255, 0.411), rgba(51, 49, 49, 0.425), rgb(118, 138, 197), rgb(39, 83, 218), rgb(4, 5, 8));
+    background-color: rgba(135, 245, 221, 0.411);
 }
 /* --------------------------------------------------------------- */
 /* Slideshow container */
@@ -151,7 +151,7 @@ font-style: oblique;
   
   /* Caption text */
   .text {
-    color: #f2f2f2;
+    color: #000000;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
@@ -212,7 +212,7 @@ font-style: oblique;
   }
 /* -------------------Hire Me Section-------------------------------- */
 .hire-container{
-     background: linear-gradient(90deg, rgba(255, 255, 255, 0.411), rgba(51, 49, 49, 0.425), rgb(118, 138, 197), rgb(39, 83, 218), rgb(4, 5, 8));
+    background-color: rgba(135, 245, 221, 0.411);
 }
 .hire-icons{
 width: 60%;
@@ -244,7 +244,7 @@ text-align: center;
 }
 
 #contact-container{
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.411), rgba(51, 49, 49, 0.425), rgb(118, 138, 197), rgb(39, 83, 218), rgb(4, 5, 8));
+    background-color: rgba(135, 245, 221, 0.411);
         
 }
 
@@ -278,7 +278,7 @@ text-align: center;
 
 
 .others-container{
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.411), rgba(51, 49, 49, 0.425), rgb(118, 138, 197), rgb(39, 83, 218), rgb(4, 5, 8));
+    background-color: rgba(135, 245, 221, 0.411);
 
 }
 .firebase-show{
@@ -324,6 +324,8 @@ footer{
     width: 50px;
     text-align: center;
     text-decoration: none;
+    font-style: none;
+    color: black;
 }
 
   /* Add a hover effect if you want */
@@ -360,3 +362,15 @@ footer{
     padding-right: 20px;
     }
 }
+
+.others,.contact,.hire,.projects,.about,.home{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.411), rgba(51, 49, 49, 0.425), rgb(118, 138, 197), rgb(39, 83, 218), rgb(4, 5, 8));
+}
+
+a{
+    font-style: none;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
