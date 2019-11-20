@@ -2,7 +2,7 @@
     margin: 0;
 }
 nav{
-    height: 5vh;
+    height: 4.5vh;
     position: fixed;
     z-index: 100;
     top: 0;
@@ -10,6 +10,19 @@ nav{
     display:table;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.411), rgba(5, 2, 2, 0.425), rgb(4, 5, 8), rgb(4, 5, 8), rgb(4, 5, 8));
     text-align: right;
+}
+@media screen and (max-width: 640px){
+nav{
+    height: 7vh;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    display:block;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.411), rgba(5, 2, 2, 0.425), rgb(4, 5, 8), rgb(4, 5, 8), rgb(4, 5, 8));
+    text-align: right;
+    /* margin-right: 20%; */
+}
 }
 
 .a{
@@ -20,9 +33,9 @@ nav{
     vertical-align: middle;
     margin-top: 2.5vh;
 }
+
 .a:hover{
     color: tomato;
-    font-size: 32px;
 }
 
 .a:last-child{
@@ -36,6 +49,16 @@ nav{
     text-align: center;
     padding-right: 20px;
     text-decoration: none;
+}
+
+@media screen and (max-width: 640px){
+    .a{
+        color: #fbff00;
+        font-size: 12px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: right;
+        vertical-align: middle;
+    }
 }
 
 main{
@@ -149,10 +172,21 @@ font-style: oblique;
     position: relative;
     margin: auto;
   }
+  #imgSlider{
+    margin-left:15%; margin-right:15%;width:70%; height:70vh; border-radius: 0.9%; padding:5%
+  }
+
+  @media screen and (max-width: 640px){
+      #imgSlider{
+    width: 98%;
+    margin: 0%;
+    height: 50vh;  
+    }
+      }
   
   /* Caption text */
   .text {
-    color: #000000;
+    
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
@@ -160,7 +194,18 @@ font-style: oblique;
     width: 100%;
     text-align: center;
   }
-  
+  @media screen and (max-width: 640px){
+    .text {
+       
+        font-size: 15px;
+        padding: 8px 12px;
+        position: block;
+        bottom: 18px;
+        width: 100%;
+        text-align: center;         
+  }
+}
+
   /* Number text (1/3 etc) */
   .numbertext {
     color: #f2f2f2;
@@ -173,6 +218,14 @@ font-style: oblique;
     padding: 5%;
     margin-top: 1%;
   }
+
+  #aSlider{
+color: #000000;
+  }
+  @media screen and (max-width: 640px){
+    #aSlider{
+        color: white;
+  }}
   
   /* The dots/bullets/indicators */
   .dot {
@@ -242,6 +295,31 @@ text-align: center;
     float: left;
     margin-right: 22.5%;
     margin-left: 22.5%;
+}
+@media screen and (max-width: 640px){
+    .pdf,.doc{
+        width: 80%;
+        height: 100px;
+        float: left;
+        text-align: center;
+        margin-top: 2vh;
+    }
+    #pdf,#doc{
+        width: 100%;
+        max-height: 150px;
+        float: left;
+        display: block;
+        text-align: center;
+        margin-top: 2vh;
+    }
+    
+    .pdf-btn,.doc-btn{
+        width: 50%;
+        font-size: 12px;
+        float: left;
+        text-align: center;
+    }
+
 }
 
 #contact-container{
